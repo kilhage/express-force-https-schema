@@ -1,10 +1,7 @@
-/// <reference types="express" />
-import express from "express";
-
 declare module "express-force-https-schema" {
   export type EnabledFunction = (
-    req: express.Request,
-    res: express.Response,
+    req: Express.Request,
+    res: Express.Response,
     options: IOptions
   ) => boolean;
 
@@ -18,9 +15,8 @@ declare module "express-force-https-schema" {
   export function forceHttpsSchema(
     options?: IOptions
   ): (
-    req: express.Request,
-    res: express.Response,
-    next: express.NextFunction
+    req: Express.Request,
+    res: Express.Response
   ) => void;
 
   export default forceHttpsSchema;
