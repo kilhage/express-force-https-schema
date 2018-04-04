@@ -15,7 +15,7 @@ The x-forwarded-proto is used by Heroku, AWS ELB and others to tell which schema
 ## Usage
 
 ```javascript
-import { forceHttpsSchema } from "express-force-https-schema";
+import forceHttpsSchema from "express-force-https-schema";
 
 const app = express();
 

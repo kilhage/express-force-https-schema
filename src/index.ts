@@ -63,3 +63,5 @@ export function forceHttpsSchema(options: IOptions = {}) {
     }
   };
 }
+
+export default forceHttpsSchema;

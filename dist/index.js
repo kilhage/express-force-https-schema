@@ -36,3 +36,4 @@ function forceHttpsSchema(options = {}) {
   };
 }
 exports.forceHttpsSchema = forceHttpsSchema;
+exports.default = forceHttpsSchema;
