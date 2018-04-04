@@ -20,7 +20,7 @@ import { forceHttpsSchema } from "express-force-https-schema";
 const app = express();
 
 app.use(
-  forceHttpsHandler({
+  forceHttpsSchema({
     enabled: process.env.FORCE_HTTPS === "true",
     skipUserAgents: /ELB-HealthChecker/i
   })
