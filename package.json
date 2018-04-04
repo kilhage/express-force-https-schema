@@ -1,6 +1,6 @@
 {
   "name": "express-force-https-schema",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description":
     "configurable express middleware that forces https schema based on x-forwarded-proto header",
   "main": "dist/index.js",
