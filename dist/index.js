@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const defaultOptions = {
-  enabled: (req, res) => true,
+  enabled: true,
   userAgentHeader: "user-agent",
   schemaHeader: "x-forwarded-proto"
 };
@@ -14,7 +14,7 @@ function skipUserAgent(req, res, options) {
   return options.skipUserAgents.test(userAgent);
 }
 function forceHttpsSchema(options = {}) {
-  options = { ...defaultOptions, ...options };
+  options = Object.assign({}, defaultOptions, options);
   return (req, res, next) => {
     const schemaHeader = options.schemaHeader;
     let enabled = true;

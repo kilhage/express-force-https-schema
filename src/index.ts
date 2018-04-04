@@ -14,7 +14,7 @@ export interface IOptions {
 }
 
 const defaultOptions = {
-  enabled: (req: express.Request, res: express.Response) => true,
+  enabled: true,
   userAgentHeader: "user-agent",
   schemaHeader: "x-forwarded-proto"
 };
