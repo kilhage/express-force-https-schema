@@ -1,6 +1,18 @@
-## express-force-https-schema
+# express-force-https-schema
 
-# Usage
+## Installation
+
+```
+$ npm install express-force-https-schema
+```
+
+## Description
+
+Very simple configurable express middleware that forces https schema based on x-forwarded-proto header.
+
+The x-forwarded-proto is used by Heroku, AWS ELB and others to tell which schema the request was made with.
+
+## Usage
 
 ```javascript
 import { forceHttpsSchema } from "express-force-https-schema";
@@ -15,7 +27,7 @@ app.use(
 );
 ```
 
-# Options
+## Options
 
 | Key             | Default           |
 | --------------- | ----------------- |
@@ -23,3 +35,9 @@ app.use(
 | userAgentHeader | user-agent        |
 | schemaHeader    | x-forwarded-proto |
 | skipUserAgents  | null              |
+
+## Test
+
+```
+npm test
+```

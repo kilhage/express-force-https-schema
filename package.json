@@ -1,7 +1,8 @@
 {
   "name": "express-force-https-schema",
   "version": "1.0.0",
-  "description": "",
+  "description":
+    "configurable express middleware that forces https schema based on x-forwarded-proto header",
   "main": "dist/index.js",
   "scripts": {
     "test": "npm run lint",
@@ -11,22 +12,27 @@
   },
   "repository": {
     "type": "git",
-    "url":
-      "git+ssh://git@github.com/kilhage/node-express-force-https-schema.git"
+    "url": "git+ssh://git@github.com/kilhage/express-force-https-schema.git"
   },
-  "keywords": ["express", "https"],
+  "keywords": [
+    "express",
+    "https",
+    "aws",
+    "heroku",
+    "x-forwarded-proto",
+    "force"
+  ],
   "author": "emilkilhage@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kilhage/node-express-force-https-schema/issues"
+    "url": "https://github.com/kilhage/express-force-https-schema/issues"
   },
-  "homepage":
-    "https://github.com/kilhage/node-express-force-https-schema#readme",
+  "homepage": "https://github.com/kilhage/express-force-https-schema#readme",
   "dependencies": {
-    "@types/express": "^4.11.1"
+    "@types/express": "^4.11.1",
+    "express": "^4.16.3"
   },
   "devDependencies": {
-    "express": "^4.16.3",
     "prettier": "^1.11.1",
     "pretty-quick": "^1.4.1",
     "tslint": "^5.9.1",
